@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
   </head>
+
   <body>
     <h2>Free Online Registration Form</h2>
 
-    <form>
+    <form autocomplete="off" action="https://echo.htmlacademy.ru">
       <!--Personal informatin-->
 
       <fieldset>
@@ -21,7 +22,8 @@
               type="number"
               min="18"
               max="110"
-              required /></label
+              required
+            /> </label
           ><br />
           <label>Full date of birth:<input type="date" /></label><br />
           <label
@@ -55,7 +57,12 @@
             >What time do you go to bed?<input type="datetime-local"
           /></label>
           <br />
-          <label>What are your favorite brand of cars?<input type="" /></label>
+          <label for="cars">What are your favorite brand of cars</label>
+          <select multiple name="cars" id="cars">
+            <option value="volvo">BMW</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
           <br />
           <label>How do you rate our work?<input type="range" /></label><br />
         </p>
@@ -63,6 +70,21 @@
       <!--Additional info-->
       <fieldset>
         <legend>Additional info</legend>
+        <label
+          >Comments:
+          <textarea
+            id="w3review"
+            name="w3review"
+            rows="2"
+            cols="20"
+          ></textarea></label
+        ><br />
+        <label for="recommend">Would do recommend us</label>
+        <select name="recommend" id="recommend">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+        <br />
 
         <p></p>
       </fieldset>
