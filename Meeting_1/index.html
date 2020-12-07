@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h2>Free Online Registration Form</h2>
+
+    <form>
+      <!--Personal informatin-->
+
+      <fieldset>
+        <legend>Personal informatin</legend>
+        <p>
+          <label>Surname:<input type="text" required /></label><br />
+          <label>Name:<input type="text" /></label><br />
+          <label
+            >How old are You?<input
+              type="number"
+              min="18"
+              max="110"
+              required /></label
+          ><br />
+          <label>Full date of birth:<input type="date" /></label><br />
+          <label
+            >I accept the term of the agreement<input type="checkbox" /></label
+          ><br />
+        </p>
+      </fieldset>
+
+      <!--Registration-->
+      <fieldset>
+        <legend>Registration</legend>
+        <p>
+          <label>E-mail:<input type="email" /></label><br />
+          <label>Password:<input type="password" /></label><br />
+        </p>
+      </fieldset>
+
+      <!--An intresting fact about You!-->
+      <fieldset>
+        <legend>An intresting fact about You!</legend>
+        <p>
+          <label>Do you love cats?</label>
+          <input type="radio" id="yes" name="cats" value="yes" />
+          <label for="yes">yes</label>
+          <input type="radio" id="no" name="cats" value="no" />
+          <label for="no">no</label>
+          <br />
+          <label>What is your favorite color?<input type="color" /></label>
+          <br />
+          <label
+            >What time do you go to bed?<input type="datetime-local"
+          /></label>
+          <br />
+          <label>What are your favorite brand of cars?<input type="" /></label>
+          <br />
+          <label>How do you rate our work?<input type="range" /></label><br />
+        </p>
+      </fieldset>
+      <!--Additional info-->
+      <fieldset>
+        <legend>Additional info</legend>
+
+        <p></p>
+      </fieldset>
+      <!--Button Submint-->
+      <button type="submit">Submit</button>
+    </form>
+
+    <form></form>
+  </body>
+</html>
