@@ -1,97 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
-  </head>
+<!--тут не потрібні відступи
+якщо ти користуєшся редактором кода то  ! + TAB-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form</title>
+</head>
 
-  <body>
-    <h2>Free Online Registration Form</h2>
+<body>
+  <h2>Free Online Registration Form</h2>
 
-    <form autocomplete="off" action="https://echo.htmlacademy.ru">
-      <!--Personal informatin-->
+  <form autocomplete="off" action="https://echo.htmlacademy.ru">
+    <!--Personal informatin-->
 
-      <fieldset>
-        <legend>Personal informatin</legend>
-        <p>
-          <label>Surname:<input type="text" required /></label><br />
-          <label>Name:<input type="text" /></label><br />
-          <label
-            >How old are You?<input
-              type="number"
-              min="18"
-              max="110"
-              required
-            /> </label
-          ><br />
-          <label>Full date of birth:<input type="date" /></label><br />
-          <label
-            >I accept the term of the agreement<input type="checkbox" /></label
-          ><br />
-        </p>
-      </fieldset>
+    <fieldset>
+      <legend>Personal informatin</legend>
+      <div>
+        <label>Surname:
+          <input type="text" required />
+        </label>
+      </div>
+<!--Тут не потрібні примусове перенесення краще в блоки якісь замотати))-->
+      <div>
+        <label>Name:
+          <input type="text" />
+        </label>
+      </div>
 
-      <!--Registration-->
-      <fieldset>
-        <legend>Registration</legend>
-        <p>
-          <label>E-mail:<input type="email" /></label><br />
-          <label>Password:<input type="password" /></label><br />
-        </p>
-      </fieldset>
+      <div>
+        <label>How old are You?
+          <input type="number" min="18" max="110" required />
+        </label>
+      </div>
 
-      <!--An intresting fact about You!-->
-      <fieldset>
-        <legend>An intresting fact about You!</legend>
-        <p>
-          <label>Do you love cats?</label>
-          <input type="radio" id="yes" name="cats" value="yes" />
-          <label for="yes">yes</label>
-          <input type="radio" id="no" name="cats" value="no" />
-          <label for="no">no</label>
-          <br />
-          <label>What is your favorite color?<input type="color" /></label>
-          <br />
-          <label
-            >What time do you go to bed?<input type="datetime-local"
-          /></label>
-          <br />
-          <label for="cars">What are your favorite brand of cars</label>
-          <select multiple name="cars" id="cars">
-            <option value="volvo">BMW</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
-          </select>
-          <br />
-          <label>How do you rate our work?<input type="range" /></label><br />
-        </p>
-      </fieldset>
-      <!--Additional info-->
-      <fieldset>
-        <legend>Additional info</legend>
-        <label
-          >Comments:
-          <textarea
-            id="w3review"
-            name="w3review"
-            rows="2"
-            cols="20"
-          ></textarea></label
-        ><br />
-        <label for="recommend">Would do recommend us</label>
-        <select name="recommend" id="recommend">
-          <option value="yes">yes</option>
-          <option value="no">no</option>
+      <div>
+        <label>Full date of birth:
+          <input type="date" />
+        </label>
+      </div>
+
+      <div>
+        <label>I accept the term of the agreement
+          <input type="checkbox" />
+        </label>
+      </div>
+    </fieldset>
+
+    <!--Registration-->
+    <fieldset>
+      <legend>Registration</legend>
+      <p>
+        <label>E-mail:<input type="email" /></label><br />
+        <label>Password:<input type="password" /></label><br />
+      </p>
+    </fieldset>
+
+    <!--An intresting fact about You!-->
+    <fieldset>
+      <legend>An intresting fact about You!</legend>
+      <p>
+        <label>Do you love cats?</label>
+        <input type="radio" id="yes" name="cats" value="yes" />
+        <label for="yes">yes</label>
+        <input type="radio" id="no" name="cats" value="no" />
+        <label for="no">no</label>
+        <br />
+        <label>What is your favorite color?<input type="color" /></label>
+        <br />
+        <label>What time do you go to bed?<input type="datetime-local" /></label>
+        <br />
+        <label for="cars">What are your favorite brand of cars</label>
+        <select multiple name="cars" id="cars">
+          <option value="volvo">BMW</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
         </select>
         <br />
+        <label>How do you rate our work?<input type="range" /></label><br />
+      </p>
+    </fieldset>
+    <!--Additional info-->
+    <fieldset>
+      <legend>Additional info</legend>
+      <label>Comments:
+        <textarea id="w3review" name="w3review" rows="2" cols="20"></textarea></label><br />
+      <label for="recommend">Would do recommend us</label>
+      <select name="recommend" id="recommend">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+      <br />
 
-        <p></p>
-      </fieldset>
-      <!--Button Submint-->
-      <button type="submit">Submit</button>
-    </form>
+      <p></p>
+    </fieldset>
+    <!--Button Submint-->
+    <button type="submit">Submit</button>
+  </form>
 
-    <form></form>
-  </body>
+  <form></form>
+</body>
+
 </html>
