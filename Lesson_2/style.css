@@ -1,0 +1,23 @@
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 3px solid black;
+}
+
+.logo {
+  background-color: orange;
+}
+
+.menu {
+  background-color: red;
+}
+
+.newsfeed {
+  background-color: green;
+}
+
+.nav {
+  background-color: indigo;
+}
