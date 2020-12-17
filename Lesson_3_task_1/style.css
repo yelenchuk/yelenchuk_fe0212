@@ -1,21 +1,25 @@
 html {
-  height: 100%;
+  height: 100%; /*увеличиваем размер контейнера*/
 }
 
-.all {
+.body {
   /*display: flex;
   flex-flow: wrap;*/
   display: flex;
   flex-direction: column;
+  min-height: 100%; /*увеличиваем размер контейнера*/
 }
 
 .header {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100px; /* высота родителя, была height но мы зафиксировали */
+
+  width: 100%; /*занимат 100% экрана */
 }
 
 .logo {
@@ -23,44 +27,58 @@ html {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: aliceblue;
+  font-size: 2em;
 }
 
 .menu {
-  background: red;
-
   flex-grow: 1;
-  flex-shrink: 0;
+  flex-shrink: 1;
   flex-basis: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: red;
+  color: aliceblue;
+  font-size: 2em;
 }
 
 .content {
   display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
   width: 100%;
-  flex-grow: 1;
+  flex-shrink: 1;
   flex-shrink: 0;
   flex-basis: 450px;
 }
 
+/* 35% */
+.nav {
+  flex: 35 0 0;
+  background: plum;
+
+  color: aliceblue;
+  font-size: 2em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center; /* display: flex; justify-content: center; align-items: center;   самый простой способ отцентрировать*/
+}
+
+/* 100px+65% */
 .wrapper {
+  flex: 65 0 100px;
   display: flex;
   flex-direction: column;
-}
-
-.main {
-  display: flex;
-  flex-direction: row;
-}
-
-.list {
-  background: yellow;
-  width: 100px;
-  height: 300px;
-}
-
-.news {
-  background: coral;
-  width: 100px;
-  height: 300px;
 }
 
 .footer {
@@ -68,10 +86,53 @@ html {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: aliceblue;
+  font-size: 2em;
 }
 
-.nav {
-  background: plum;
+.main {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 300px;
+
+  display: flex;
+  flex-direction: row;
+
+  color: white;
+  font-size: 2em;
+}
+
+.news {
+  background: coral;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: aliceblue;
+}
+
+.list {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: peachpuff;
+
+  color: aliceblue;
 }
 
 .text;
