@@ -1,0 +1,307 @@
+.body {
+  font-family: Roboto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar__separation {
+  display: block;
+  box-sizing: border-box;
+
+  border: 0;
+  height: 4px;
+
+  position: relative; /*делаем, чтобы поверх нарисовать вторую линию, как на макете*/
+}
+
+.calendar__separation::before {
+  content: "";
+
+  display: block;
+  box-sizing: border-box;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 50%;
+
+  background-color: rgba(0, 0, 0, 0.17);
+}
+
+.calendar__separation::after {
+  content: "";
+
+  display: block;
+  box-sizing: border-box;
+
+  position: absolute;
+
+  top: 50%;
+  left: 0;
+
+  width: 100%;
+  height: 50%;
+
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.day-view {
+  flex: 1535 0 0;
+  padding: 80px 140px;
+}
+
+.day-view__title {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 90px;
+
+  border-bottom: 2px solid #f3f3f3;
+}
+
+.day-view__serch {
+  background-image: url(./img/search-icon.svg);
+  width: 37px;
+  height: 37px;
+  border: none;
+  background-color: white;
+}
+
+.day-view__layout {
+  background-image: url(./img/layout-icon.svg);
+  width: 38px;
+  height: 38px;
+  border: none;
+  background-color: white;
+
+  margin-left: 52px;
+}
+
+.day-view--day-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #243d6f;
+}
+
+.day-view__time-list {
+  list-style: none;
+  padding: 100px 0 0;
+  margin: 0;
+}
+
+.day-view__time-row {
+  position: relative;
+
+  display: block;
+
+  height: 120px;
+
+  margin-left: 135px;
+  box-sizing: border-box;
+
+  border-bottom: 2px solid #f3f3f3;
+}
+
+.day-view__time-key {
+  position: absolute;
+  top: 0;
+  left: -135px;
+
+  transform: translateY(-50%);
+
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+
+  color: #a4b0c3;
+}
+
+.day-view__event {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 12px 75px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #243d6f;
+}
+
+.day-view__event--finance {
+  background: rgba(133, 118, 237, 0.15);
+  border-left: 6px solid #8576ed;
+}
+
+.day-view__event--workshop {
+  background: rgba(61, 131, 249, 0.15);
+  border-left: 6px solid #3d83f9;
+  z-index: 1;
+}
+
+.day-view__event--management {
+  background: rgba(238, 165, 124, 0.15);
+  border-left: 6px solid #eea57c;
+}
+
+/* ------------------ aside----------------------------- */
+.calendar {
+  flex: 802 0 0;
+  padding: 80px 100px;
+  background: rgba(42, 46, 65, 0.7);
+}
+/* width: calc(798 * 100% / 2300); */
+
+.calendar__tiile {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: #ffffff;
+  padding-bottom: 80px;
+}
+
+.calendar__body {
+  flex: 0 0 16%;
+}
+
+.calendar__body--title {
+  display: flex;
+  justify-content: space-around;
+
+  list-style: none;
+
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+
+  color: #a4b0c3;
+
+  padding: unset;
+  margin-top: 87px;
+}
+
+.calendar__body--day {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  list-style: none;
+
+  text-align: center;
+
+  color: #ffffff;
+
+  padding: unset;
+  margin-top: 80px;
+}
+
+.calendar__body--day li {
+  flex: 1 0 14%;
+  height: 86px;
+}
+
+.day__new_month {
+  color: #a4b0c3;
+}
+
+.calendar__category--title {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+
+  color: #ffffff;
+
+  margin-top: 100px;
+}
+
+.calendar__category--list {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.calendar__category--list button {
+  flex: 0 0 45%;
+  margin-top: 42px;
+  border: none;
+}
+
+.list__finance {
+  background: #8576ed;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+
+  width: 285px;
+  height: 80px;
+  border-radius: 12px;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.list__managment {
+  background: #f39946;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+
+  text-align: center;
+
+  width: 285px;
+  height: 80px;
+  border-radius: 12px;
+
+  color: #ffffff;
+}
+
+.list__desegn {
+  background: #ff467e;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+
+  text-align: center;
+
+  width: 285px;
+  height: 80px;
+
+  border-radius: 12px;
+
+  color: #ffffff;
+}
+
+.day__activ span {
+  background: #3c82f9;
+  border-radius: 50%;
+  padding: 15px;
+}
