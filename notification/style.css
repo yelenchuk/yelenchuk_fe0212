@@ -25,27 +25,3 @@ html {
   left: 50%;
   transform: translate(-50%, 0);
 }
-
-.push {
-  display: inline-block;
-  width: 15em;
-  font-size: 80%;
-  color: rgba(255, 255, 255, 0.9);
-  text-shadow: #2e7ebd 0 1px 2px;
-  text-decoration: none;
-  text-align: center;
-  line-height: 1.1;
-  white-space: pre-line;
-  padding: 0.7em 0;
-  border: 1px solid;
-  border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
-  border-radius: 6px;
-  outline: none;
-  background: #60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);
-  box-shadow: inset rgba(255, 255, 255, 0.5) 1px 1px;
-  margin-top: 20px;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
-  margin-top: 30px;
-}

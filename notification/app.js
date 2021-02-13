@@ -1,16 +1,16 @@
 import { createNotifications } from "./noty.js";
 import { createPush } from "./push.js";
 
-let button = document.querySelector(".submit");
+let button = document.querySelector("#first");
 
 button.addEventListener("click", () => {
   createNotifications("loading...", "left", "aquamarine", "");
   setTimeout(() => {
     createNotifications("End loading!", "right middle", "green");
-  }, 5000);
+  }, 4750);
 });
 
-let push = document.querySelector(".push");
+let push = document.querySelector("#second");
 
 push.addEventListener("click", () => {
   createPush("Yes, it's push!", "Ok!");
