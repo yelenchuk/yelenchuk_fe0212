@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calendar_</title>
     <link rel="stylesheet" href="calendar_.css" />
+    <script src="calendar_.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -80,7 +81,8 @@
         </div>
       </div>
       <aside class="calendar">
-        <div class="calendar__tiile">
+        <div class="first-calendar">
+        <div class="calendar__title">
           <span><</span>March 2018<span>></span>
         </div>
         <hr class="calendar__separation" />
@@ -133,8 +135,11 @@
           </ul>
         </div>
         <hr class="calendar__separation" />
+        </div>
+        <div class="second-calendar"></div>
         <div class="calendar__category--title">Your categories</div>
-          <div class="git-list">
+          
+          <div class="calendar__category--list button">
             <button class="list__finance">FINANCE</button>
             <button class="list__managment">MANAGEMENT</button>
             <button class="list__desegn">DESIGN</button>

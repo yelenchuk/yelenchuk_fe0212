@@ -13,6 +13,7 @@
 
   border: 0;
   height: 4px;
+  width: 100%;
 
   position: relative; /*делаем, чтобы поверх нарисовать вторую линию, как на макете*/
 }
@@ -28,7 +29,7 @@
   top: 0;
   left: 0;
 
-  width: 100%;
+  width: 100%; /* add when made js*/
   height: 50%;
 
   background-color: rgba(0, 0, 0, 0.17);
@@ -170,7 +171,7 @@
 }
 /* width: calc(798 * 100% / 2300); */
 
-.calendar__tiile {
+.calendar__title {
   font-weight: 500;
   font-size: 36px;
   line-height: 42px;
@@ -180,6 +181,8 @@
 
   color: #ffffff;
   padding-bottom: 80px;
+  padding-top: 60px;
+  /* padding- top add when made js */
 }
 
 .calendar__body {
@@ -220,6 +223,9 @@
 .calendar__body--day li {
   flex: 1 0 14%;
   height: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .day__new_month {
@@ -245,7 +251,7 @@
   list-style: none;
 }
 
-.git-list {
+.calendar__category--list button {
   flex: 0 0 45%;
   margin-top: 42px;
   border: none;
@@ -294,7 +300,6 @@
 
   width: 285px;
   height: 80px;
-  margin-top: 25px;
 
   border-radius: 12px;
 
@@ -305,4 +310,9 @@
   background: #3c82f9;
   border-radius: 50%;
   padding: 15px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
