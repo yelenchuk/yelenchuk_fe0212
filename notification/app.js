@@ -1,4 +1,5 @@
 import { createNotifications } from "./noty.js";
+import { createPush } from "./push.js";
 
 let button = document.querySelector(".submit");
 
@@ -7,4 +8,10 @@ button.addEventListener("click", () => {
   setTimeout(() => {
     createNotifications("End loading!", "right middle", "green");
   }, 5000);
+});
+
+let push = document.querySelector(".push");
+
+push.addEventListener("click", () => {
+  createPush("Yes, it's push!", "Ok!");
 });
